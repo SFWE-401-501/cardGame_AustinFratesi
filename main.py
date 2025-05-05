@@ -89,14 +89,14 @@ def searchForCard(hand):
     for i in TITLE:
         num += 1
         print("\t" * 2 + "(" + str(num) + ") " + str(i))
-    title = eval(input("Choose a Title: "))
+    title = int(input("Choose a Title: "))
     title = TITLE[title - 1]
 
     num1 = 0
     for i in GANG:
         num1 += 1
         print("\t" * 2 + "(" + str(num1) + ") " + str(i))
-    gang = eval(input("Choose a Gang: "))
+    gang = int(input("Choose a Gang: "))
     gang = GANG[gang - 1]
 
     key = convertCardToId(title, gang)
